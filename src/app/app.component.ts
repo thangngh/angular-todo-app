@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo-app';
+  mockData = mockData;
+  // data: any = '123'
+  addTodo(data: any) {
+    console.log('Add todo', data);
+  }
 }
+
+const mockData = [
+  {
+    id: 1,
+    title: 'Learn Angular',
+    completed: true
+  },
+  {
+    id: 2,
+    title: 'Learn React',
+    completed: false
+  },
+]
+
